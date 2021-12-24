@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'jasmine.jragon'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.jetbrains:annotations:22.0.0'
+
+    testImplementation 'org.testng:testng:7.4.0'
+}
+
+test {
+    useTestNG()
+}
+
+compileJava {
+    options.encoding("UTF-8")
+}
+
+compileTestJava {
+    options.encoding("UTF-8")
+}
